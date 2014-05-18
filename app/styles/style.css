@@ -1,0 +1,160 @@
+/* Put your CSS here */
+html, body {
+    margin: 0;
+    color: #868686;
+    font-family: "Helvetic Neue", Helvetica, Arial;
+}
+
+div.tictactoe-grid {
+    width: 450px;
+    height: 450px;
+    margin: 30px auto;
+    font-family: FontAwesome;
+}
+
+div.tictactoe-grid-row {
+    height: 33.33333%;
+}
+
+div.tictactoe-grid-cell {
+    float: left;
+    width: 33.333333%;
+    height: 100%;
+    border-right: 2px solid #AFD9C8;
+    border-bottom: 2px solid #AFD9C8;
+}
+
+div.tictactoe-grid-cell.lastCell {
+    border-right: 0;
+}
+
+div.tictactoe-grid-cell.lastRow {
+    border-bottom: 0;
+}
+
+span.tictactoe-grid-value {
+    display: block;
+    text-align: center;
+    height: 100%;
+    line-height: 150px;
+    font-size: 70px;
+}
+
+span.tictactoe-grid-value.enter.fa-times {
+    color: #F0F7F4;
+}
+
+span.tictactoe-grid-value.enter.fa-circle-o {
+    color: #E9DFDD;
+}
+
+span.tictactoe-grid-value.fa-times {
+    color: #AFD9C8;
+}
+
+span.tictactoe-grid-value.fa-circle-o {
+    color: #624C47;
+}
+
+/* players */
+div.tictactoe-players-wrapper {
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+div.tictactoe-player-wrapper {
+    text-align: center;
+    position: absolute;
+    left: 200px;
+    top: 430px;
+    color: #AFD9C8;
+    text-transform: uppercase;
+    z-index: 2;
+    width: 100px;
+}
+
+div.tictactoe-player-wrapper.right {
+    right: 200px;
+    left: auto;
+    color: #624C47;
+}
+
+div.tictactoe-player-wrapper span {
+    font-family: "Helvetic Neue", Helvetica, Arial;
+}
+
+div.tictactoe-player-wrapper .tictactoe-player-name.fa-user:before {
+    content: "\f007";
+    display: block;
+    font-size: 100px;
+}
+
+div.tictactoe-btn{
+    text-align: center;
+    z-index: 3;;
+}
+
+
+div.tictactoe-btn a{
+    color: #42CA83;
+    text-decoration: none;
+    font-family: "Helvetic Neue", Helvetica, Arial;
+}
+
+div.tictactoe-start-btn-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 250px;
+    text-align: center;
+    z-index: 3;
+}
+
+div.tictactoe-restart-btn{
+    opacity: 0;
+    display: none;
+}
+
+div.tictactoe-btn a:hover {
+    color: #3FE28D;
+    text-decoration: none;
+}
+
+div.tictactoe-notification {
+    text-align: center;
+}
+
+input.tictactoe-player-name {
+    outline: none;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    font-family: "Helvetic Neue", Helvetica, Arial;
+}
+
+input.tictactoe-player-name:focus {
+    outline: none;
+    border: 0;
+}
+
+*::-webkit-input-placeholder {
+    color: #e9e9e9;
+}
+
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #e9e9e9;
+}
+
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #e9e9e9;
+}
+
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #e9e9e9;
+}

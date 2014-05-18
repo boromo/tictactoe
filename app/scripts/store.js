@@ -1,0 +1,1 @@
+Tictactoe.ApplicationAdapter = DS.FixtureAdapter;

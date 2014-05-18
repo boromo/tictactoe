@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="starter-template">
+        <h2 class="text-center">TicTacToe and Ember.js</h2>
+    </div>
+    <div class="row" style="position: relative">
+        {{outlet players}}
+        {{outlet grid}}
+    </div>
+    <div class="tictactoe-notification">
+        <h4>Choose your names...</h4>
+    </div>
+    <div class="tictactoe-btn tictactoe-restart-btn">
+        <a href="#" {{action 'restartAction'}}>
+            <span class="fa fa-check-square"></span>
+            <span class="text">Restart</span>
+        </a>
+    </div>
+</div>

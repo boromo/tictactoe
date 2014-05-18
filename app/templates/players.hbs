@@ -1,0 +1,21 @@
+{{#view Tictactoe.PlayersView }}
+    <div class="tictactoe-players-wrapper">
+        {{#each}}
+            <div {{bind-attr class=":tictactoe-player-wrapper isRight"}}>
+                {{#view Tictactoe.PlayerView}}
+                    <div class="tictactoe-player-name fa fa-user">
+                        {{input type="text" class="tictactoe-player-name" value=name placeholder="Your name"}}
+                        <span>{{score}}</span>
+                    </div>
+                {{/view}}
+            </div>
+        {{/each}}
+    </div>
+    <div class="tictactoe-btn tictactoe-start-btn-wrapper">
+        <a href="#" {{action 'initializePlayers'}}>
+            <span class="fa fa-check-square"></span>
+            <span class="text">start</span>
+        </a>
+    </div>
+
+{{/view}}

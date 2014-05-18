@@ -1,0 +1,15 @@
+<div class="tictactoe-grid">
+    {{#each}}
+        <div class="tictactoe-grid-row">
+            {{#each  itemController="cell"}}
+                <div {{bind-attr class=":tictactoe-grid-cell isLastCell isLastRow"}}>
+                    {{#view Tictactoe.CellView
+                        tagName="span"
+                        classBinding=":tictactoe-grid-value class"
+                    }}
+                    {{/view}}
+                </div>
+            {{/each}}
+        </div>
+    {{/each}}
+</div>
