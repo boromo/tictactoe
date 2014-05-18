@@ -2,8 +2,8 @@
 Tictactoe.GridRoute = Ember.Route.extend({
     renderTemplate: function() {
         this.render('grid', {   // the template to render
-            into: 'application',                // the template to render into
-            outlet: 'grid'               // the name of the outlet in that template
+            into: 'application', // the template to render into
+            outlet: 'grid'       // the name of the outlet in that template
         });
     },
     setupController: function(controller) {
